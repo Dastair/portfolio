@@ -7,25 +7,21 @@ import {
     Stack,
     Heading,
     Flex,
-    Menu,
-    MenuItem,
-    MenuList,
-    MenuButton,
-    IconButton,
     useColorModeValue,
-    Button
+    Button, Icon
 } from "@chakra-ui/react"
-import {HamburgerIcon} from "@chakra-ui/icons"
+import{IoLogoGithub, IoLogoLinkedin, IoLogoGoogle} from "react-icons/io5";
+
 import ThemeToggleButton from "./theme-toggle-button";
 const LinkItem = ({href, path, children}) => {
-    const active = path = href
-    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+    const active = path === href
+    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.700')
     return (
         <NextLink href={href} legacyBehavior>
             <Link
                 p={2}
-                bg={active ? 'glassTeal' : undefined}
-                color={active ? '#202023' : inactiveColor}
+                bg={active ? 'navyBlue' : undefined}
+                color={active ? '#ffffff' : inactiveColor}
             >
                 {children}
 
@@ -70,17 +66,30 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{base: 4, nmd: 0}}
                 >
-                    <LinkItem href="/works" path={path}>
-                        Works
+                    <LinkItem href="/porto" path={path}>
+                        Portfolio
                     </LinkItem>
-                    <LinkItem href="/posts" path={path}>
-                        Posts
+                    <LinkItem href="https://drive.google.com/file/d/1GxVx-cP8SLnIya_kAOHF5ge03vdwSw4w/view" path={path}>
+                        <Button rightIcon = {<Icon as = {IoLogoGoogle}/>} colorScheme = "teal">
+                        Resume
+                        </Button>
                     </LinkItem>
+                    <LinkItem href ="https://www.linkedin.com/in/kiernan-nesslar-3b9a83251/" path ={path}>
+                        <Button rightIcon={<Icon as = {IoLogoLinkedin}/>} colorScheme = "blue">
+                            LinkedIn
+                        </Button>
+                    </LinkItem>
+                    <LinkItem href = "https://github.com/Dastair" path = {path}>
+                        <Button rightIcon ={<Icon as = {IoLogoGithub}/>} colorScheme = "green">
+                            GitHub
+                        </Button>
+                    </LinkItem>
+                    <Box flex = {1} >
+                        <ThemeToggleButton/>
 
+                    </Box>
                 </Stack>
-                <Box flex = {1} align = "right">
-                    <ThemeToggleButton/>
-                </Box>
+
 
             </Container>
 
