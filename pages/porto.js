@@ -7,6 +7,7 @@ import KDTree from '../public/images/works/KDTree.png'
 import thumbWebsite from '../public/images/works/thumbWebsite.png'
 import thumbCandle from '../public/images/works/thumbCandle.png'
 import thumbReaper from '../public/images/works/reapThumb.png'
+import thumbLantern from '../public/images/works/Lantern.jpg'
 import Layout from "../components/layouts/article";
 
 const Porto = () => {
@@ -45,10 +46,18 @@ const Porto = () => {
                 </Section>
 
             </Section>
-            <SimpleGrid columns={[1,1,2]} gap={6}>
+            <Section delay={0.3}>
+                <Divider my={6}/>
+                <Heading AS = "h3" fontSize={20} mb={4}>
+                    WIP
+                </Heading>
+                <Section>
+                    <WorkGridItem id= "https://github.com/Dastair/rogueLight" title = "Stealth-based lighting tech demo" thumbnail = {thumbLantern}>
+                        Experimenting with 2d lighting systems and enemy states
+                    </WorkGridItem>
+                </Section>
 
-
-            </SimpleGrid>
+            </Section>
 
 
         </Container>
