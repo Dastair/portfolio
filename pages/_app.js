@@ -12,10 +12,14 @@ const Website = ({Component, pageProps, router}) => {
             <Layout router={router}>
                 <AnimatePresence  mode = "wait" initial ={true}>
                 <Component {...pageProps} key = {router.route} />
-                <Analytics/>
+
             </AnimatePresence>
             </Layout>
+            <Analytics />
         </ChakraProvider>
+
+
+
 
     )
 
