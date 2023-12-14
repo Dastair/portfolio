@@ -26,7 +26,7 @@ const Porto = () => {
                         Handmade KD Tree implementation of a maps-esque route finding application.
                     </WorkGridItem>
                     <WorkGridItem id="https://github.com/Dastair/portfolio" title = "This Website!" thumbnail = {thumbWebsite}>
-                        My first foray into front-end development! Featuring hastily learned JS and Node skills and the joy of YouTube tutorials
+                        My first foray into front-end development! Featuring hastily learned JS, Node, React, and TypeScript skills and the joy of YouTube tutorials
                     </WorkGridItem>
                 </Section>
 
