@@ -69,7 +69,7 @@ const Navbar = props => {
                     <LinkItem href="/porto" path={path}>
                         Portfolio
                     </LinkItem>
-                    <LinkItem href="https://drive.google.com/file/d/1GxVx-cP8SLnIya_kAOHF5ge03vdwSw4w/view" path={path}>
+                    <LinkItem href="https://docs.google.com/document/d/1tUulunptPVMNci9XoaWfc7mPOes0k7_XM7tBJsW9pkk/view" path={path}>
                         <Button rightIcon = {<Icon as = {IoLogoGoogle}/>} colorScheme = "teal">
                         Resume
                         </Button>
