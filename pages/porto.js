@@ -17,9 +17,9 @@ const Porto = () => {
             <Heading as = "h3" fontSize={20} mb={4} mt={5}>
                 Portfolio
             </Heading>
-            <SimpleGrid columns = {[1,1,2]} gap={6}>
+            <SimpleGrid columns = {1} gap={6} spacingY = {10}>
                 <Section>
-                    <WorkGridItem id="https://github.com/ssameen/CrossyRoads" title= "Crossy Roads" thumbnail ={thumbCrossy}>
+                    <WorkGridItem   id="https://github.com/ssameen/CrossyRoads" title= "Crossy Roads" thumbnail ={thumbCrossy}>
                         Java remake of the popular mobile game!
                     </WorkGridItem>
                     <WorkGridItem id="https://github.com/Dastair/KDTree-Map-Implementation" title = "KDTree Route Finding" thumbnail = {KDTree}>

@@ -6,11 +6,14 @@ import {Global} from "@emotion/react";
 export const GridItem = ({children, title, thumbnail}) =>(
     <Box w ="100%" align = "center">
         <LinkBox cursor = "pointer">
-            <Image src={thumbnail}
+            <Image width={200}
+                   height={200}
+                   src={thumbnail}
                    alt={title}
                    className = "grid-item-thumbnail"
                    placeholder="blur"
-                   loading="lazy"/>
+                   loading="lazy"
+                   />
         </LinkBox>
         <LinkOverlay>
             <Text mt = {2}>{title}</Text>
@@ -25,7 +28,9 @@ export const WorkGridItem = ({children, id, title, thumbnail}) =>(
     <Box w= "100%" align = "center">
         <NextLink href={id}>
             <LinkBox cursor = "pointer">
-                <Image src={thumbnail}
+                <Image width={200}
+                       height={200}
+                    src={thumbnail}
                        alt={title}
                        className = "grid-item-thumbnail"
                        placeholder= "blur"

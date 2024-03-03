@@ -1,4 +1,4 @@
-import {Container, Box, Heading, Image, useColorModeValue, Button} from "@chakra-ui/react";
+import {Container, Box, Heading, Image, useColorModeValue, Button, Badge} from "@chakra-ui/react";
 
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
@@ -19,7 +19,7 @@ const Page = () => {
                 <Heading as="h2" variant = "page-title">
                     Kiernan Nesslar
                 </Heading>
-                <p>Aspiring Game Developer/Designer</p>
+                <p>Aspiring Software Developer/Designer</p>
 
 
             </Box>
@@ -45,8 +45,8 @@ const Page = () => {
             <Heading as = "h3" variant = "section-title">
                 Who am I?
             </Heading>
-            <Paragraph>I am a Computer Science student here at Colorado College in sunny Colorado Springs. My dream lies in
-                in Game Development where I hope to give players the opportunities to craft stories that they can tell to their friends for years.
+            <Paragraph>I am a Computer Science student here at Colorado College in sunny Colorado Springs, currently looking for challenging real-world experience
+                across a wide range of industries.
                 I am adaptable, great under pressure, and love to learn. I hope I can prove that to you in person as well</Paragraph>
             <Box align = "center" my={4}>
                 <NextLink href="/porto">
@@ -79,6 +79,36 @@ const Page = () => {
             </BioSection>
         </Section>
         <Section delay={0.45} fade = {-10}>
+            <Heading as = "h3" variant="section-title">
+                Computer Science Coursework
+            </Heading>
+            <Box ml={70} borderRadius = "lg" bg ={useColorModeValue('teal.200','cyan.700')} w='29%' p ={3} mb = {5} mt = {5} align = "center">
+                Software Design
+
+                <Badge marginX={1} colorScheme = 'red'>Java</Badge>
+
+                <Badge variant = 'subtle' colorScheme = 'green'>Git</Badge>
+
+                <Badge colorScheme = 'gray'> DEV STANDARDS</Badge>
+
+            </Box>
+            <Box  ml={180} borderRadius = "lg" bg ={useColorModeValue('red.200','pink.900')} w = '40%' p ={3} mb = {5} mt = {5} align = "center">
+                Computer Organization
+
+                <Badge marginX={1} colorScheme = 'orange'>C</Badge>
+
+                <Badge marginX={1} variant = 'subtle' colorScheme = 'green'>Git</Badge>
+                <Badge colorScheme = 'yellow'> Memory Management</Badge>
+            </Box>
+            <Box ml ={75} borderRadius = "lg" bg ={useColorModeValue('green.200','green.900')} w = "55%" p ={3} mb = {5} mt = {5} align = "center">
+                Data Structures and Algorithms
+                <Badge marginX={1} colorScheme = 'purple'>Python</Badge>
+                <Badge marginX={1} colorScheme = 'cyan'>Database Management</Badge>
+                <Badge colorScheme = 'blue'> Algorithmic Efficiency</Badge>
+
+            </Box>
+        </Section>
+        <Section delay={0.60} fade = {10}>
             <Heading as = "h3" variant="section-title">
                 Other Passions
             </Heading>
