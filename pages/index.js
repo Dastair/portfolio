@@ -1,4 +1,4 @@
-import {Container, Box, Heading, Image, useColorModeValue, Button, Badge} from "@chakra-ui/react";
+import {Container, Box, Heading, Image, useColorModeValue, Button, Badge, Text} from "@chakra-ui/react";
 
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
@@ -59,7 +59,7 @@ const Page = () => {
         </Section>
         <Section delay = {0.3} fade = {10}>
             <Heading as="h3" variant = "section-title">
-                Time-Line
+                Experience &amp; Education
             </Heading>
             <BioSection>
                 <BioYear>2003</BioYear>
@@ -69,38 +69,21 @@ const Page = () => {
                 <BioYear>2021</BioYear>
                 Graduated from Claremont High School
             </BioSection>
+
+            <Text fontWeight="bold" fontStyle="italic" mt={4} mb={2} fontSize="lg">Colorado College</Text>
             <BioSection>
                 <BioYear>2025</BioYear>
                 Graduation from Colorado College with a BA in Computer Science, an extra major in Classics and a minor in Linguistics
             </BioSection>
-            <BioSection>
-                <BioYear>2025</BioYear>
-                Software Engineer Consultant at FDM
-            </BioSection>
-            <BioSection>
-                <BioYear>2026</BioYear>
-                ...hopefully working with you!
-            </BioSection>
-        </Section>
-        <Section delay={0.45} fade = {-10}>
-            <Heading as = "h3" variant="section-title">
-                Computer Science Coursework and Experience
-            </Heading>
             <Box ml={70} borderRadius = "lg" bg ={useColorModeValue('teal.200','cyan.700')} w='29%' p ={3} mb = {5} mt = {5} align = "center">
                 Software Design
-
                 <Badge marginX={1} colorScheme = 'red'>Java</Badge>
-
                 <Badge variant = 'subtle' colorScheme = 'green'>Git</Badge>
-
                 <Badge colorScheme = 'gray'> DEV STANDARDS</Badge>
-
             </Box>
             <Box  ml={180} borderRadius = "lg" bg ={useColorModeValue('red.200','pink.900')} w = '40%' p ={3} mb = {5} mt = {5} align = "center">
                 Computer Organization
-
                 <Badge marginX={1} colorScheme = 'orange'>C</Badge>
-
                 <Badge marginX={1} variant = 'subtle' colorScheme = 'green'>Git</Badge>
                 <Badge colorScheme = 'yellow'> Memory Management</Badge>
             </Box>
@@ -109,26 +92,38 @@ const Page = () => {
                 <Badge marginX={1} colorScheme = 'purple'>Python</Badge>
                 <Badge marginX={1} colorScheme = 'cyan'>Database Management</Badge>
                 <Badge colorScheme = 'blue'> Algorithmic Efficiency</Badge>
+            </Box>
 
-            </Box>
+            <Text fontWeight="bold" fontStyle="italic" mt={4} mb={2} fontSize="lg">FDM Group</Text>
+            <BioSection>
+                <BioYear>2025</BioYear>
+                Software Engineer Consultant at FDM
+            </BioSection>
             <Box ml={55} borderRadius="lg" bg={useColorModeValue('purple.200','purple.900')} w='35%' p={3} mb={5} mt={5} align="center">
-                FDM Java Sprint<br/>
-                <Badge marginX={1} colorScheme='green'>Spring Boot</Badge>
-                <Badge marginX={1} colorScheme='red'>TDD</Badge>
+                Java OOP<br/>
                 <Badge marginX={1} colorScheme='blue'>REST Development</Badge>
+                <Badge marginX={1} colorScheme='red'>TDD</Badge>
+                <Badge marginX={1} colorScheme='green'>Spring Boot</Badge>
+                
+                
             </Box>
-            <Box ml={160} borderRadius="lg" bg={useColorModeValue('orange.200','orange.900')} w='45%' p={3} mb={5} mt={5} align="center">
-                FDM Cloud Computing Sprint<br/>
+            <Box ml={160} borderRadius="lg" bg={useColorModeValue('orange.200','orange.900')} w='40%' p={3} mb={5} mt={5} align="center">
+                Cloud Computing<br/>
                 <Badge marginX={1} colorScheme='blue'>Docker</Badge>
-                <Badge marginX={1} colorScheme='green'>GKE</Badge>
+                <Badge marginX={1} colorScheme='green'>Kubernetes</Badge>
                 <Badge marginX={1} colorScheme='yellow'>GCP</Badge>
             </Box>
             <Box ml={55} borderRadius="lg" bg={useColorModeValue('blue.200','blue.900')} w='47%' p={3} mb={5} mt={5} align="center">
-                FDM Pod Work
+                Full Stack Pod
                 <Badge marginX={1} colorScheme='orange'>Scrum Practices</Badge>
                 <Badge marginX={1} colorScheme='cyan'>React.js</Badge>
                 <Badge marginX={1} colorScheme='green'>Node.js</Badge>
             </Box>
+
+            <BioSection>
+                <BioYear>2026</BioYear>
+                ...hopefully working with you!
+            </BioSection>
         </Section>
         <Section delay={0.60} fade = {10}>
             <Heading as = "h3" variant="section-title">
