@@ -11,7 +11,7 @@ export const GridItem = ({children, title, thumbnail}) =>(
                    src={thumbnail}
                    alt={title}
                    className = "grid-item-thumbnail"
-                   placeholder="blur"
+                   placeholder={(typeof thumbnail === "string" ? thumbnail : thumbnail?.src ?? "").endsWith(".svg") ? "empty" : "blur"}
                    loading="lazy"
                    />
         </LinkBox>
@@ -33,7 +33,7 @@ export const WorkGridItem = ({children, id, title, thumbnail}) =>(
                     src={thumbnail}
                        alt={title}
                        className = "grid-item-thumbnail"
-                       placeholder= "blur"
+                       placeholder={(typeof thumbnail === "string" ? thumbnail : thumbnail?.src ?? "").endsWith(".svg") ? "empty" : "blur"}
                        loading = "lazy"
                 />
                 <LinkOverlay href={id}>

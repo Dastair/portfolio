@@ -3,7 +3,9 @@ import {Container, Heading, SimpleGrid, Divider} from "@chakra-ui/react";
 import Section from "../components/section";
 import {WorkGridItem} from "../components/grid-item";
 import thumbCrossy from '../public/images/works/thumbCrossy.png'
+import catsThumb from '../public/images/works/catsThumb.svg'
 import KDTree from '../public/images/works/KDTree.png'
+import iliadThumb from '../public/images/works/iliadThumb.jpg'
 import thumbWebsite from '../public/images/works/thumbWebsite.png'
 import thumbCandle from '../public/images/works/thumbCandle.png'
 import thumbReaper from '../public/images/works/reapThumb.png'
@@ -14,9 +16,29 @@ const Porto = () => {
 
     return ( <Layout>
         <Container>
-            <Heading as = "h3" fontSize={20} mb={4} mt={5}>
+            <Heading as = "h3" fontSize={40} mb={4} mt={5}>
                 Portfolio
             </Heading>
+            <Section>
+                <Divider my={6}/>
+                    
+                
+                <Heading AS = "h3" fontSize={20} mb={4}>
+                    Theses
+                </Heading>
+                <Section>
+                    <WorkGridItem   id="https://github.com/wgnvrd/CCGraderBot" title= "C.A.T.S. - Colorado College Automated Grading Suite" thumbnail ={catsThumb}>
+                        Fully automated grading suite for the Computer Science Classes at Colorado College
+                    </WorkGridItem>
+                    <WorkGridItem   id="https://docs.google.com/document/d/13Bwi_Lkyn2yxF8CHAV41CgDM0JD5bA-UydGFEDTIeVM" title= "The Metrical and Semantic Impacts of the Digamma in the Iliad" thumbnail ={iliadThumb}>
+                        My Classics thesis, a breakdown of Homeric Linguistics and the appearance of a forgotten letter in Ancient Greek; Not particularly relevant to computer science, but something that I am very proud of.
+                    </WorkGridItem>
+                </Section>
+            </Section>
+            <Divider my={6}/>
+                <Heading AS = "h3" fontSize={20} mb={4}>
+                    Other Computer Science Projects
+                </Heading>
             <SimpleGrid columns = {1} gap={6} spacingY = {10}>
                 <Section>
                     <WorkGridItem   id="https://github.com/ssameen/CrossyRoads" title= "Crossy Roads" thumbnail ={thumbCrossy}>
