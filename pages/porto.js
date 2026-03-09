@@ -19,11 +19,11 @@ const Porto = () => {
             <Heading as = "h3" fontSize={40} mb={4} mt={5}>
                 Portfolio
             </Heading>
-            <Section>
+            <Section delay={0.2}>
                 <Divider my={6}/>
                     
                 
-                <Heading AS = "h3" fontSize={20} mb={4}>
+                <Heading as = "h3" fontSize={20} mb={4}>
                     Theses
                 </Heading>
                 <Section>
@@ -35,8 +35,9 @@ const Porto = () => {
                     </WorkGridItem>
                 </Section>
             </Section>
+            <Section delay = {0.3}>
             <Divider my={6}/>
-                <Heading AS = "h3" fontSize={20} mb={4}>
+                <Heading as = "h3" fontSize={20} mb={4}>
                     Other Computer Science Projects
                 </Heading>
             <SimpleGrid columns = {1} gap={6} spacingY = {10}>
@@ -53,9 +54,10 @@ const Porto = () => {
                 </Section>
 
             </SimpleGrid>
-            <Section delay={0.2}>
+            </Section>
+            <Section delay={0.4}>
                 <Divider my={6}/>
-                <Heading AS = "h3" fontSize={20} mb={4}>
+                <Heading as = "h3" fontSize={20} mb={4}>
                     Side Projects
                 </Heading>
                 <Section>
@@ -68,9 +70,9 @@ const Porto = () => {
                 </Section>
 
             </Section>
-            <Section delay={0.3}>
+            <Section delay={0.5}>
                 <Divider my={6}/>
-                <Heading AS = "h3" fontSize={20} mb={4}>
+                <Heading as = "h3" fontSize={20} mb={4}>
                     WIP
                 </Heading>
                 <Section>

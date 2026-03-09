@@ -26,22 +26,20 @@ export const GridItem = ({children, title, thumbnail}) =>(
 
 export const WorkGridItem = ({children, id, title, thumbnail}) =>(
     <Box w= "100%" align = "center">
-        <NextLink href={id}>
-            <LinkBox cursor = "pointer">
-                <Image width={200}
-                       height={200}
-                    src={thumbnail}
-                       alt={title}
-                       className = "grid-item-thumbnail"
-                       placeholder={(typeof thumbnail === "string" ? thumbnail : thumbnail?.src ?? "").endsWith(".svg") ? "empty" : "blur"}
-                       loading = "lazy"
-                />
-                <LinkOverlay href={id}>
-                <Text mt={2} fontSize={20}>{title}</Text>
-                </LinkOverlay>
-                <Text fontSize={14}>{children}</Text>
-            </LinkBox>
-        </NextLink>
+        <LinkBox cursor = "pointer">
+            <Image width={200}
+                   height={200}
+                src={thumbnail}
+                   alt={title}
+                   className = "grid-item-thumbnail"
+                   placeholder={(typeof thumbnail === "string" ? thumbnail : thumbnail?.src ?? "").endsWith(".svg") ? "empty" : "blur"}
+                   loading = "lazy"
+            />
+            <LinkOverlay as={NextLink} href={id}>
+            <Text mt={2} fontSize={20}>{title}</Text>
+            </LinkOverlay>
+            <Text fontSize={14}>{children}</Text>
+        </LinkBox>
     </Box>
 
 )
