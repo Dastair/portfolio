@@ -19,7 +19,7 @@ const Page = () => {
                 <Heading as="h2" variant = "page-title">
                     Kiernan Nesslar
                 </Heading>
-                <p>Aspiring Software Developer/Designer</p>
+                <p>Software Engineer</p>
 
 
             </Box>
@@ -36,7 +36,7 @@ const Page = () => {
                     maxWidth = "150px"
                     display = "indline-block"
                     borderRadius = "full"
-                    src = "/images/profpic.png"
+                    src = "/images/portpicture.jpg"
                     alt = "Profile Image"
                 />
             </Box>
@@ -45,7 +45,7 @@ const Page = () => {
             <Heading as = "h3" variant = "section-title">
                 Who am I?
             </Heading>
-            <Paragraph>I am a Computer Science student here at Colorado College in sunny Colorado Springs, currently looking for challenging real-world experience
+            <Paragraph>I am a Computer Science and Classics graduate from Colorado College in sunny Colorado Springs, currently based in Austin, looking for challenging real-world experience
                 across a wide range of industries.
                 I am adaptable, great under pressure, and love to learn. I hope I can prove that to you in person as well</Paragraph>
             <Box align = "center" my={4}>
@@ -71,16 +71,20 @@ const Page = () => {
             </BioSection>
             <BioSection>
                 <BioYear>2025</BioYear>
-                Graduation from Colorado College with a BA in Computer Science and a double minor in Classics and Linguistics
+                Graduation from Colorado College with a BA in Computer Science, an extra major in Classics and a minor in Linguistics
             </BioSection>
             <BioSection>
-                <BioYear>Next...</BioYear>
-                Perhaps working with you!
+                <BioYear>2025</BioYear>
+                Software Engineer Consultant at FDM
+            </BioSection>
+            <BioSection>
+                <BioYear>2026</BioYear>
+                ...hopefully working with you!
             </BioSection>
         </Section>
         <Section delay={0.45} fade = {-10}>
             <Heading as = "h3" variant="section-title">
-                Computer Science Coursework
+                Computer Science Coursework and Experience
             </Heading>
             <Box ml={70} borderRadius = "lg" bg ={useColorModeValue('teal.200','cyan.700')} w='29%' p ={3} mb = {5} mt = {5} align = "center">
                 Software Design
@@ -106,6 +110,24 @@ const Page = () => {
                 <Badge marginX={1} colorScheme = 'cyan'>Database Management</Badge>
                 <Badge colorScheme = 'blue'> Algorithmic Efficiency</Badge>
 
+            </Box>
+            <Box ml={55} borderRadius="lg" bg={useColorModeValue('purple.200','purple.900')} w='35%' p={3} mb={5} mt={5} align="center">
+                FDM Java Sprint<br/>
+                <Badge marginX={1} colorScheme='green'>Spring Boot</Badge>
+                <Badge marginX={1} colorScheme='red'>TDD</Badge>
+                <Badge marginX={1} colorScheme='blue'>REST Development</Badge>
+            </Box>
+            <Box ml={160} borderRadius="lg" bg={useColorModeValue('orange.200','orange.900')} w='45%' p={3} mb={5} mt={5} align="center">
+                FDM Cloud Computing Sprint<br/>
+                <Badge marginX={1} colorScheme='blue'>Docker</Badge>
+                <Badge marginX={1} colorScheme='green'>GKE</Badge>
+                <Badge marginX={1} colorScheme='yellow'>GCP</Badge>
+            </Box>
+            <Box ml={55} borderRadius="lg" bg={useColorModeValue('blue.200','blue.900')} w='47%' p={3} mb={5} mt={5} align="center">
+                FDM Pod Work
+                <Badge marginX={1} colorScheme='orange'>Scrum Practices</Badge>
+                <Badge marginX={1} colorScheme='cyan'>React.js</Badge>
+                <Badge marginX={1} colorScheme='green'>Node.js</Badge>
             </Box>
         </Section>
         <Section delay={0.60} fade = {10}>
